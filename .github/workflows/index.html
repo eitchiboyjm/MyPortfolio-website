@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portfolio</title>
+
+    <style>
+      /* Intro overlay */
+      #music-intro {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        text-align: center;
+      }
+
+      #music-intro button {
+        background-color: #6c63ff;
+        color: white;
+        font-size: 18px;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 0.3s;
+      }
+
+      #music-intro button:hover {
+        background-color: #574bff;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- 🎵 INTRO OVERLAY -->
+    <div id="music-intro">
+      <h2>Welcome to My Portfolio 🎶</h2>
+      <p>Click below to play music before entering.</p>
+      <button id="play-btn">Play Music & Enter</button>
+      <audio id="bg-music" loop>
+          <source src="music/Closing Time- Semisonic.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- NAVBAR -->
+     <nav>
+        <div class="left">
+            <a href="/">John Marwen B. Palomares</a>
+        </div>
+        <div class="right">
+            <a href="http://Facebook.com" target="_blank" rel="noopener noreferrer"></a>
+             <i class="fa-brands fa-facebook"></i>
+             <span>Facebook</span>
+         
+            <a href="mailto:johnmarwenpalomares@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+             <span>Email</span>
+            </a>
+        </div>
+     </nav>
+
+     <main>
+        <!-- SECTION 1: Hero -->
+         <section class="hero-section">
+           <div class="text">
+            <h2>Hi, I'm John </h2>
+            <p>"Gained hands-on experience across diverse roles including performing at music gigs, assisting with air conditioning cleaning services, and selling BBQ—demonstrating adaptability, customer service skills, and a strong work ethic in fast-paced environments. Also worked as a delivery rider, ensuring timely and accurate order deliveries while maintaining excellent customer interaction and navigation skills."</p>
+            <div class="links">
+                <a href="#skills">
+                  <i class="fa-solid fa-code"></i>   
+                  <span>Skills</span>
+                </a>
+
+                <a href="#testimony">
+                  <i class="fa-solid fa-pen"></i>   
+                  <span>Testimony</span>
+                </a>
+
+                <a href="#contact">
+                  <i class="fa-solid fa-envelope"></i>   
+                  <span>Contact</span>
+                </a>
+            </div>
+        </div>
+
+           <div class="headshot">
+            <img src="Image/image1.jpg" alt="image">
+           </div>
+         </section>
+
+         <!-- SECTION 2: Skills -->
+         <section id="skills" class="skills-section">
+          <h2>Skills</h2>
+          <div class="text">
+            I have gained diverse work experience across different fields, including serving as a delivery rider where I developed time management and navigation skills. As a music gig performer (freelance), I enhanced my creativity, confidence, and teamwork. I also worked in aircon cleaning services and as a BBQ food stall vendor, which strengthened my customer service and hands-on technical abilities. Additionally, my role as a youth leader helped me build leadership, communication, and organizational skills.
+          </div>
+
+          <div class="cells"> 
+            <div class="cell">
+              <img src="Image/python1.webp" alt="image">
+            </div>
+            <div class="cell">
+              <img src="Image/capcut1.jpg" alt="image">
+            </div>
+            <div class="cell">
+              <img src="Image/canva1.jpg" alt="image">
+            </div>
+            <div class="cell">
+              <img src="Image/rider.jpg" alt="image">
+            </div>
+         </section>
+
+         <!-- SECTION 3: Testimony -->
+         <section id="testimony" class="testimony-section">
+          <h2>Testimony</h2>
+          <div class="group">
+            <div class="person-details">
+              <img src="Image/malupiton1.jpg">
+              <p>Joel Ravanera</p>
+              <p>"Malupiton"</p>
+            </div>
+            <div class="text">
+              "Jm is a dedicated and reliable professional with strong attention to detail and a commitment to delivering quality results. He consistently demonstrates initiative, teamwork, and a positive attitude toward challenges. His ability to learn quickly and adapt to new tasks makes him a valuable asset to any organization."
+            </div>
+          </div>
+         </section>
+
+         <!-- SECTION 4: Contact -->
+         <section id="contact" class="contact-section">
+          <h2>Contact</h2>
+          <div class="group">
+            <div class="text">
+              Feel free to reach out to me for collaborations, opportunities, or any inquiries. I’m always open to connecting with people who share the same passion for creativity, music, and growth. Whether it’s about work, projects, or just to say hello, don’t hesitate to send me a message—I’d be happy to hear from you and respond as soon as possible.
+            </div>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name">
+
+              <label for="email">Email</label>
+              <input type="email" id="email">
+
+              <label for="message">Message</label>
+              <textarea id="message" cols="30" rows="10"></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+         </section>
+     </main>
+
+     <script>
+       const playBtn = document.getElementById('play-btn');
+       const musicIntro = document.getElementById('music-intro');
+       const audio = document.getElementById('bg-music');
+
+       playBtn.addEventListener('click', () => {
+         audio.play().then(() => {
+           musicIntro.style.display = 'none';
+         }).catch(err => console.log("Autoplay blocked:", err));
+       });
+     </script>
+
+</body>
+</html>
